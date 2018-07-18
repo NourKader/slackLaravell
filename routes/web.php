@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 Route::get('/chat', 'MyController@chat');
 Route::post('/chat', 'MyController@sendMessage');
